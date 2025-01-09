@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  
+  "loginTitle": "오직 투자자들을 위한 SNS",
+  "emailLabel": "이메일",
+  "passwordLabel": "비밀번호",
+  "loginButtonText": "로그인",
+  "findPassword": "비밀번호 찾기",
+  "findEmail": "이메일 찾기",
+  "signUp": "회원가입"
+}
