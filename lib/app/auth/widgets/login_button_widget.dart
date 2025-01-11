@@ -17,6 +17,7 @@ class LoginButton extends StatelessWidget {
         print('Login button pressed');
       },
       style: ElevatedButton.styleFrom(
+        elevation: 0,
         minimumSize: const Size(double.infinity, 55),
         backgroundColor: ColorPalette.primaryGreen,
         shape: RoundedRectangleBorder(
@@ -106,6 +107,89 @@ class EPSTextButton extends StatelessWidget {
           },
         ),
       ],
+    );
+  }
+}
+
+class GoogleLoginButton extends StatelessWidget {
+  const GoogleLoginButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      onPressed: () {},
+      style: OutlinedButton.styleFrom(
+          minimumSize: const Size(double.infinity, 55),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          side: BorderSide(
+            color: ColorPalette.lightBlack1,
+            width: 1,
+          )),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/images/logo/google_logo.png',
+            width: 24,
+            height: 24,
+          ),
+          const SizedBox(width: 10),
+          const Text(
+            "구글로 계속하기",
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class KakaoLoginButton extends StatelessWidget {
+  const KakaoLoginButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {},
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size(double.infinity, 55),
+        backgroundColor: ColorPalette.kakaoColor,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/images/logo/kakao_logo.png',
+            width: 24,
+            height: 24,
+          ),
+          const SizedBox(width: 10),
+          const Text(
+            "카카오로 계속하기",
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

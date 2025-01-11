@@ -6,8 +6,6 @@ import 'package:flutter_template/app/auth/widgets/login_widget.dart';
 import 'package:flutter_template/app/auth/widgets/text_widget.dart';
 import 'package:flutter_template/common/color_palette.dart';
 
-import 'package:flutter/material.dart';
-
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
 
@@ -34,6 +32,11 @@ class LoginView extends StatelessWidget {
             const SizedBox(height: 25),
             EPSTextButton(localizations: localizations),
             const SizedBox(height: 25),
+            const OrWidget(),
+            const SizedBox(height: 25),
+            const KakaoLoginButton(),
+            const SizedBox(height: 12),
+            const GoogleLoginButton(),
           ],
         ),
       ),

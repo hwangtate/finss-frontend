@@ -24,6 +24,7 @@ ThemeData darkTheme = ThemeData(
     bodyLarge: GoogleFonts.notoSansKr(
       fontSize: 14,
       fontWeight: FontWeight.w500,
+      color: Colors.white,
     ),
   ),
 );
